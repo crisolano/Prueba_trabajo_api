@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f4f0;
+  color: #222;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+}
+
+h1 {
+  color: #005c2e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.card-desc {
+  color: #666;
+  font-size: 0.9em;
+  margin: 0 0 10px 0;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #005c2e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #004020;
+}
+
+.btn-secundario {
+  background: #f0f4f0;
+  color: #005c2e;
+  border: 2px solid #005c2e;
+}
+
+.btn-secundario:hover {
+  background: #dce8dc;
+}
+
+.resultado {
+  min-height: 100px;
+  color: #555;
+}
+
+/* tarjeta de cada item en resultados */
+.item-card {
+  padding: 14px;
+  border-left: 5px solid #005c2e;
+  background: #edf7ee;
+  margin-bottom: 14px;
+  border-radius: 8px;
+}
+
+.item-card h3 {
+  margin: 0 0 8px 0;
+  color: #003d1e;
+}
+
+.item-card p {
+  margin: 4px 0;
+  font-size: 0.95em;
+}
+
+.loading {
+  color: #888;
+  font-style: italic;
+}
+
+.error {
+  color: #b00020;
+  font-weight: bold;
+}
+
+.badge {
+  display: inline-block;
+  background: #005c2e;
+  color: white;
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-size: 0.8em;
+  margin-left: 8px;
+}
+
+.hint {
+  font-size: 0.8em;
+  color: #888;
+  margin: 4px 0 0 0;
+}

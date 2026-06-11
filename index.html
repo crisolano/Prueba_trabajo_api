@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explora Colombia</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1>🇨🇴 Explora Colombia</h1>
+    <p>Consulta información de Colombia usando la API pública de api-colombia.com. ¡Sin API Key!</p>
+
+    <section class="grid">
+
+      <div class="card">
+        <h2>Departamentos</h2>
+        <p class="card-desc">Busca departamentos por nombre</p>
+
+        <label>Nombre del departamento</label>
+        <input type="text" id="nombreDepartamento" placeholder="Ej: Santander, Antioquia" />
+
+        <button onclick="buscarDepartamento()">Buscar</button>
+        <button class="btn-secundario" onclick="todosLosDepartamentos()">Ver todos</button>
+      </div>
+
+      <div class="card">
+        <h2>Ciudades</h2>
+        <p class="card-desc">Busca ciudades por nombre</p>
+
+        <label>Nombre de la ciudad</label>
+        <input type="text" id="nombreCiudad" placeholder="Ej: Bucaramanga, Medellín" />
+
+        <button onclick="buscarCiudad()">Buscar ciudad</button>
+      </div>
+
+      <div class="card">
+        <h2>Presidentes</h2>
+        <p class="card-desc">Busca presidentes por nombre o apellido</p>
+
+        <label>Nombre del presidente</label>
+        <input type="text" id="nombrePresidente" placeholder="Ej: Gustavo, Petro, Uribe" />
+
+        <button onclick="buscarPresidente()">Buscar</button>
+        <button class="btn-secundario" onclick="todosLosPresidentes()">Ver todos</button>
+      </div>
+
+    </section>
+
+    <section class="card">
+      <h2>Resultado</h2>
+      <div id="resultado" class="resultado">
+        Aquí aparecerán los resultados. Selecciona una opción arriba 👆
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
